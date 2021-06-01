@@ -1,16 +1,10 @@
 package com.exam;
 
-import com.exam.entities.Role;
-import com.exam.entities.User;
-import com.exam.entities.UserRole;
 import com.exam.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.HashSet;
-import java.util.Set;
 
 @SpringBootApplication
 public class ExamserverApplication implements CommandLineRunner {
@@ -24,6 +18,7 @@ public class ExamserverApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+		/*
 		System.out.println("Inserting Into Tables");
 
 		User user = new User();
@@ -47,5 +42,6 @@ public class ExamserverApplication implements CommandLineRunner {
 
 		User user1 = this.userService.createUser(user,userRoles);
 		System.out.println("User : "+user1.getUsername() +" created successfully");
+		 */
 	}
 }

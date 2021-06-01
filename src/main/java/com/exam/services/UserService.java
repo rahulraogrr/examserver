@@ -18,4 +18,19 @@ public interface UserService {
      * @return
      */
     User createUser(User user, Set<UserRole> userRoles) throws Exception;
+
+    /**
+     * Browse User By His Username
+     *
+     * @param username
+     * @return
+     */
+    User browseUserByUsername(String username);
+
+    /**
+     * Delete A User
+     *
+     * @param id
+     */
+    void deleteUserById(Long id);
 }
