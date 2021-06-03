@@ -14,6 +14,7 @@ import java.util.Set;
 
 @RestController
 @RequestMapping("/user")
+@CrossOrigin("*")
 public class UserController {
 
     @Autowired
@@ -47,5 +48,5 @@ public class UserController {
         return new ResponseEntity<>("Resource Deletion Success",HttpStatus.OK);
     }
 
-    //TODO: Update Mapping 
+    //TODO: Update Mapping
 }
