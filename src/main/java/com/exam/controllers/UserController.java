@@ -14,7 +14,6 @@ import java.util.Set;
 
 @RestController
 @RequestMapping("/user")
-@CrossOrigin("*")
 public class UserController {
 
     @Autowired
@@ -22,6 +21,7 @@ public class UserController {
 
     @PostMapping
     public ResponseEntity<User> createUser(@RequestBody User user) throws Exception {
+
         Role role = new Role();
         role.setId(2L);
         role.setRoleName("REGULAR");
